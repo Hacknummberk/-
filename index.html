@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>เกมเขาวงกตสุ่ม</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>เกมเขาวงกตสุ่ม</h2>
+  <canvas id="maze" width="480" height="480"></canvas>
+  <div class="controls">
+    <div><button onclick="move(0,-1)">⬆️</button></div>
+    <div>
+      <button onclick="move(-1,0)">⬅️</button>
+      <button onclick="move(1,0)">➡️</button>
+    </div>
+    <div><button onclick="move(0,1)">⬇️</button></div>
+  </div>
+  <p><button onclick="generateMaze()">🔁 สุ่มแมพใหม่</button></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
